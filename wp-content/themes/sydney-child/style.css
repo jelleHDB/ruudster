@@ -1,0 +1,531 @@
+/*
+ Theme Name:   Helemaal de bom theme
+ Theme URI:    https://www.helemaaldebom.nl/
+ Description:  Helemaal de bom child theme
+ Author:       Bas Romeijn
+ Author URI:   https://www.helemaaldebom.nl/
+ Template:     sydney
+ Version:      1.0.0
+ Tags:         plaats, hier, jouw, tags, gescheiden, door, kommas
+ Text Domain:  sydney-child
+*/
+/* =Eigen CSS hier beneden plaatsen
+-------------------------------------------------------------- */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h2, h1 {
+  font-family: "Poppins", sans-serif !important;
+}
+
+/* START: Slider home */
+.deelZin {
+  display: inline-block;
+}
+
+.sliderHome-inner {
+  max-width: 1600px;
+  width: 100%;
+  margin: 90px auto 60px;
+  padding: 0px 30px;
+  display: flex;
+  gap: 20%;
+}
+
+.sliderHome-c1 {
+  flex: 50%;
+}
+
+.sliderHome-c2 {
+  flex: 40%;
+  background-color: #0F4A58;
+  border-radius: 40px 0px;
+  box-shadow: 16px 16px #3B6D78;
+}
+
+.sliderHome-c1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.titelInSliderHome {
+  display: inline-block;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+  background: white;
+  padding: 5px 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.sloganSliderHome h4 {
+  margin: 5px 0px;
+  color: white;
+}
+
+.deelZin {
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.deelZin_2 {
+  font-weight: 600 !important;
+}
+
+.deelZin_4 {
+  color: #F76A02 !important;
+  font-weight: 600;
+}
+
+.icon-slider {
+  position: relative;
+  top: 5px;
+}
+
+.usp-sliderHome {
+  color: white;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+.extra-border {
+  padding: 20px 50px;
+  box-shadow: -13px -13px #3B6D78;
+  position: relative;
+  z-index: 20;
+  background-color: #0F4A58;
+  border-radius: 20px 0px;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1100px) {
+  .sliderHome-inner {
+    gap: 5%;
+  }
+  .sliderHome-c1 {
+    flex: 40%;
+  }
+}
+@media only screen and (max-width: 1100px) and (min-width: 650px) {
+  .sliderHome-inner {
+    flex-direction: column;
+  }
+  .sliderHome-c1 {
+    padding-bottom: 300px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 649px) {
+  .sliderHome-inner {
+    flex-direction: column;
+  }
+  .sliderHome-c1 {
+    padding-bottom: 180px;
+    margin-bottom: 30px;
+  }
+  .deelZin, .usp-sliderHome {
+    font-size: 25px;
+  }
+  .extra-border {
+    padding: 20px 10px;
+  }
+}
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 12px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 1020px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    display: block;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .topnav.responsive {
+    position: relative;
+    padding-top: 50px;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-costum-inner {
+    flex-direction: row-reverse;
+  }
+  .costum-linkHeader {
+    padding-left: 15px !important;
+  }
+  .header-costum-c1 a {
+    float: right;
+  }
+}
+@media screen and (min-width: 1021px) {
+  .topnav {
+    float: right;
+  }
+}
+.header-costum-inner {
+  display: flex;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.header-costum-inner div {
+  flex: 100%;
+}
+
+.header-costum {
+  background-color: #0F4A58;
+}
+
+.header-costum-c1 a {
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-costum-c1 a:hover, .costum-linkHeader:hover {
+  color: #F76A02;
+}
+
+.icon:hover, .icon:active {
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .header-costum-inner {
+    flex-direction: column;
+  }
+  .header-costum-c1 a {
+    float: left;
+    padding: 20px 5px 5px;
+  }
+  .topnav a {
+    padding: 5px;
+  }
+  .costum-linkHeader {
+    padding: 15px !important;
+  }
+  .header-costum-inner {
+    padding-bottom: 20px;
+  }
+}
+.logo-home-inner-1, .logo-home-inner-2 {
+  display: flex;
+}
+
+.logo-home-inner-1 div, .logo-home-inner-2 div {
+  flex: 100%;
+}
+
+.costumLink-logo {
+  font-size: 70px;
+  padding: 200px 20px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.costumLink-logo:hover {
+  color: #F76A02;
+}
+
+.logo-home {
+  margin: 150px 0px 150px -25px;
+  transform: rotate(-2.5deg);
+  width: 105%;
+  position: relative;
+}
+
+.logohome-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 515px;
+  width: 100%;
+}
+
+.logo-home-inner-1 {
+  border-top: 3px solid #F76A02;
+  border-bottom: 3px solid #F76A02;
+}
+
+.logo-home-inner-1 .logo-home-c1 {
+  border-right: 3px solid #F76A02;
+}
+
+.logo-home-inner-2 {
+  border-bottom: 3px solid #F76A02;
+}
+
+.logo-home-inner-2 .logo-home-c3 {
+  border-right: 3px solid #F76A02;
+}
+
+.logo-home-inner-1 div, .logo-home-inner-2 div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 650px) {
+  .costumLink-logo {
+    padding: 110px 20px;
+    font-size: 55px;
+  }
+  .logo-home {
+    width: 106%;
+  }
+  .logohome-logo {
+    max-width: 350px;
+  }
+}
+@media screen and (max-width: 649px) {
+  .costumLink-logo {
+    padding: 110px 20px;
+    font-size: 55px;
+  }
+  .logo-home {
+    width: 100%;
+    transform: rotate(0deg);
+    margin: 80px 0px;
+  }
+  .logohome-logo {
+    display: none;
+  }
+  .logo-home-inner-1, .logo-home-inner-2 {
+    flex-direction: column;
+  }
+  .logo-home-inner-1 .logo-home-c1, .logo-home-inner-2 .logo-home-c3 {
+    border-right: 0px;
+  }
+  .logo-home-c4, .logo-home-c2 {
+    border-top: 3px solid #F76A02;
+  }
+}
+.tekst-vlakken-inner {
+  display: flex;
+  justify-content: center;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto 100px;
+  padding: 0px 30px;
+  gap: 5%;
+}
+
+.tekst-vlakken-inner div {
+  flex: 30%;
+  max-width: 460px;
+}
+
+.tekstVlakHome {
+  background-color: #0F4A58;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 40px 0px;
+  box-shadow: 10px 10px #3B6D78;
+}
+
+.titel-tekstvlak {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.tekstVlakHome p {
+  font-weight: 300;
+}
+
+.titel-tekstvlak::first-letter {
+  color: #F76A02;
+  font-size: 22px;
+}
+
+.extra-border-2 {
+  padding: 30px;
+  box-shadow: -10px -10px #3B6D78;
+  position: relative;
+  z-index: 20;
+  background-color: #0F4A58;
+  border-radius: 20px 0px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 650px) {
+  .tekst-vlakken-inner {
+    flex-wrap: wrap;
+  }
+  .tekst-vlakken-inner div {
+    flex: 45%;
+  }
+  .tekst-vlakken-inner div:nth-child(3) {
+    margin-top: 50px;
+    max-width: 100%;
+  }
+  .tekst-vlakken-inner div:nth-child(3) .extra-border-2 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 649px) {
+  .tekst-vlakken-inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .tekst-vlakken-inner div {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .tekst-vlakken-inner div {
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+  .tekst-vlakken-inner div:nth-child(3) .extra-border-2 {
+    max-width: 100%;
+  }
+}
+.kernwaarde-vlak p {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.kernwaardes-inner {
+  display: flex;
+  gap: 5%;
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 120px;
+}
+
+.kernwaarde-vlak h2 {
+  font-size: 28px;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.titelKernwaarde::first-letter, .titelKernwaardePunt {
+  color: #F76A02 !important;
+}
+
+.kernwaardes-inner div {
+  flex: 18%;
+}
+
+.kernwaardes {
+  border-top: 3px solid #F76A02;
+  border-bottom: 3px solid #F76A02;
+  text-align: center;
+  margin: 180px 0px 200px -25px;
+  transform: rotate(-2.5deg);
+  width: 105%;
+}
+
+.kernwaarde-vlak {
+  text-align: left !important;
+}
+
+.titel-kernwaardes {
+  background: #F76A02;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: -20px;
+  font-size: 50px;
+  font-weight: 200;
+  color: white;
+}
+
+.kernwaardes-inner {
+  transform: rotate(2.5deg);
+}
+
+@media screen and (max-width: 1600px) {
+  .kernwaarde-vlak h2 {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1400px) and (min-width: 800px) {
+  .kernwaardes-inner div {
+    flex: 35%;
+  }
+  .kernwaardes-inner {
+    flex-wrap: wrap;
+  }
+  .kernwaardes {
+    width: 106% !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  .kernwaardes-inner div {
+    margin-bottom: 20px;
+  }
+  .kernwaardes-inner {
+    flex-direction: column;
+    padding: 120px 40px;
+  }
+  .kernwaardes, .kernwaardes-inner {
+    transform: rotate(0deg);
+  }
+  .kernwaardes {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .titel-kernwaardes {
+    font-size: 30px;
+  }
+}
+.vlakken-informatie-inner {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 30px;
+  display: flex;
+  gap: 5%;
+}
+
+.vlakken-informatie-inner div {
+  flex: 100%;
+  background-color: #0F4A58;
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
