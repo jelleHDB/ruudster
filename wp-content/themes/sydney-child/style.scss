@@ -496,7 +496,7 @@ h2, h1 {
     border-top: 3px solid $secondColor;
     border-bottom: 3px solid $secondColor;
     text-align: center;
-    margin: 180px 0px 200px -25px;
+    margin: 180px 0px 150px -25px;
     transform: rotate(-2.5deg);
     width: 105%;
 }
@@ -565,16 +565,446 @@ h2, h1 {
 }
 
 .vlakken-informatie-inner {
+    max-width: 1550px;
+    width: 100%;
+    margin: 60px auto;
+    padding: 0px 60px;
+    display: flex;
+    gap: 10%;
+}
+
+.informatieVlak-onder{
+    background-color: $mainColor;
+    padding: 35px 25%;
+    margin: 0px -30px;
+}
+
+.titel-infoOnder {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    transform: rotate(2.5deg);
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.titel-infoOnder::first-letter, .oranje_punt {
+    color: $secondColor;
+}
+
+.informatieVlak-onder p {
+    color: white;
+    font-family: $mainFont;
+    transform: rotate(2.5deg);
+}
+
+.onlyBorder {
+    flex: 100%;
+    display: flex;
+    transform: rotate(-2.5deg);
+    border: 6px solid $secondColor;
+    background: transparent;
+    padding: 15px 0px;
+}
+
+@media screen and (max-width: 1056px) {
+    .vlakken-informatie-inner {
+        flex-direction: column;
+    }
+
+    .onlyBorder {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .informatieVlak-onder {
+        padding: 35px 40px;
+    }
+}
+
+.verbeterd-slider {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.verbeterd-slider-c1, .verbeterd-slider-inhoud {
+    display: flex;
+}
+
+.verbeterd-slider-c1, .verbeterd-slider-c2 {
+    flex: 100%;
+}
+
+.verbeterd-slider-c2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.verbeterd-slider-c1 {
+    margin-left: 40px;
+    justify-content: center;
+
+}
+
+.titel-verbeterd {
+    background: $secondColor;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: -20px;
+    font-size: 30px;
+    font-weight: 200;
+    color: white;
+}
+
+.hoofd-verbeterd_1, .hoofd-verbeterd_2 {
+    color: white;
+    font-size: 18px; 
+    background: $mainColor;
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    left: 80px;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.0;
+}
+.hoofd-verbeterd_1:before, .hoofd-verbeterd_2:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    width: 0;
+    border-top: 20px solid $mainColor;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.afbeeldingen-hoofd-1 {
+    margin-right: 30px;
+}
+
+.afbeeldingen-hoofd-1:hover .hoofd-verbeterd_1, .afbeeldingen-hoofd-2:hover .hoofd-verbeterd_2 {
+    visibility: visible;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.afbeeldingen-hoofd-1:hover, .afbeeldingen-hoofd-2:hover {
+    cursor: pointer;
+}
+
+.button-slider-verbeterd {
+    background: #f76802d7;
+    padding: 15px 100px 15px 15px;
+    color: white;
+    font-family: $mainFont;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+i.fa.fa-angle-right {
+    margin-left: 10px;
+    position: relative;
+    top: 1px;
+    font-size: 20px;
+}
+
+.button-slider-verbeterd:hover {
+    color: white;
+    padding: 15px 140px 15px 15px;
+    transition: all 0.2s ease-in-out;
+    background: $secondColor;
+}
+
+@media only screen and (max-width: 1192px) and (min-width: 600px)  {
+    .titel-verbeterd {
+        font-size: 20px;
+    }
+
+    .button-slider-verbeterd {
+        padding: 15px 70px 15px 15px;
+        font-size: 14px !important;
+    }
+
+    .button-slider-verbeterd:hover {
+        padding: 15px 90px 15px 15px;
+    }
+
+    .afbeeldingen-hoofd-1 img, .afbeeldingen-hoofd-2 img {
+        padding: 10px 10px 0px 10px;
+    }
+
+    .hoofd-verbeterd_1, .hoofd-verbeterd_2 {
+        top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 599px) {
+    .titel-verbeterd {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .button-slider-verbeterd {
+        padding: 15px 70px 15px 15px;
+        font-size: 14px !important;
+    }
+
+    .button-slider-verbeterd:hover {
+        padding: 15px 90px 15px 15px;
+    }
+
+
+    .hoofd-verbeterd_1, .hoofd-verbeterd_2 {
+        top: 20px;
+    }
+
+    .button-slider-verbeterd {
+        white-space: pre;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px)  {
+    .hoofd-verbeterd_1, .hoofd-verbeterd_2 {
+        left: 50px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px)  {
+    .hoofd-verbeterd_1, .hoofd-verbeterd_2 {
+        left: 15px;
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .afbeeldingen-hoofd-2 {
+        display: none;
+    }
+
+    .verbeterd-slider-c2 {
+        flex: 70%;
+    }
+
+    .verbeterd-slider-c1 {
+        flex: 30%;
+    }
+}
+
+.footerRuudster {
+    background-color: $mainColor;
+}
+
+.footer-inhoud {
     max-width: 1600px;
     width: 100%;
-    margin: 0 auto;
-    padding: 0px 30px;
+    padding: 50px 30px;
+    margin: 0px auto;
     display: flex;
+    justify-content: space-evenly;
     gap: 5%;
 }
 
-.vlakken-informatie-inner div {
-    flex: 100%;
+.footer-c2 {
+    flex: 50%;
+}
+
+.footer-inhoud div h2 {
+    color: white;
+}
+
+.footer-c1 a {
+    display: block;
+}
+
+.menu-items-footer-c2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.div-menuItems {
+    flex: 30.33%;
+}
+
+.linkMenuC2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 160px;
+}
+
+.footer-c1, .footer-c3 {
+    flex: 20%;
+}
+
+.footer-c2 {
+    flex: 60%;
+}
+
+.oranjeLetter {
+    color: $secondColor;
+}
+
+.titel-c1-footer, .titel-footer-c2, .titel-footer-c3 {
+    font-weight: 200;
+    font-size: 34px;
+    text-transform: uppercase;
+}
+
+.menu-item-footer-c1 {
+    color: white;
+    font-size: 20px; 
+    font-family: $mainFont;
+    font-weight: 300;
+}
+
+.titel-menu-items-c2 {
+    color: white;
+    font-size: 22px;
+    font-family: $mainFont;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.menu-items-c2 {
+    color: white;
+    font-family: $mainFont;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.titel-footer-c3 {
+    margin-bottom: 0px;
+}
+
+.titelKlein-footer-c3 {
+    margin-top: -5px;
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.adres_1-footer-c3, .adres_2-footer-c3 {
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.adres_1-footer-c3 {
+    margin-bottom: 0px;
+}
+
+.adres_2-footer-c3 {
+    margin-top: 0px;
+}
+
+.linkTelefoonnummer-footer-c3, .linkMail-footer-c3 {
+    color: white;
+    display: block;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.linkTelefoonnummer-footer-c3 {
+    margin-bottom: -15px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 600px)  {
+    .footer-c1 {
+        order: 1;
+    }
+
+    .footer-c2 {
+        order: 3;
+    }
+
+    .footer-c3 {
+        order: 2;
+    }
+
+    .footer-inhoud {
+        flex-wrap: wrap;
+    }
+    
+    .footer-c2 {
+        margin-top: 75px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .footer-inhoud {
+        flex-direction: column;
+    }
+
+    .footer-c2 {
+        margin: 75px 0px;
+    }
+
+    .menu-items-footer-c2 {
+        gap: 5%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .div-menuItems {
+        margin: 15px 0px;
+    }
+
+    .menu-items-footer-c2 {
+        flex-direction: column;
+    }
+
+    .linkMenuC2 {
+        height: unset;
+    }
+
+    .titel-footer-c2 {
+        margin-bottom: 0px;
+    }
+}
+
+.creditsFooter {
     background-color: $mainColor;
-    padding: 20px;
+}
+
+.creditsFooter-inhoud {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+.sydney-credits {
+    color: white;
+    font-size: 10px;
+    font-family: $mainFont;
+    font-weight: 200;
+}
+
+.sydney-credits a {
+    color: white;
+}
+
+.sydney-credits a:hover,.sydney-credits a:visited {
+    text-decoration: underline;
+    color: white;
+}
+
+.menu-item-footer-c1:hover, .menu-items-c2:hover, .linkTelefoonnummer-footer-c3:hover, .linkMail-footer-c3:hover {
+    color: $secondColor;
 }

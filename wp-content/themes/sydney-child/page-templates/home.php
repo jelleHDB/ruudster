@@ -122,7 +122,7 @@ get_header(); ?>
     <?php endif; ?>
     </div>
 </div>
-<div class="kernwaardes" style="background-image: linear-gradient( #0f4a58bd, #0f4a58ad ), url(<?php the_field('achtergrond_afbeelding-kernwaarde'); ?>)">
+<div class="kernwaardes" style="background-image: linear-gradient( #0f4a58de, #0f4a58de ), url(<?php the_field('achtergrond_afbeelding-kernwaarde'); ?>)">
     <h2 class="titel-kernwaardes"><?php the_field( 'titel-kernwaarde' ); ?></h2>
     <div class="kernwaardes-inner">
         <?php if ( have_rows( '5_kernwaardes-kernwaarde' ) ) : ?>
@@ -152,13 +152,15 @@ get_header(); ?>
             <?php while ( have_rows( '2_vlakken_informatie-home' ) ) : the_row(); ?>
                 <?php if ( have_rows( 'informatie_vlak-2-home' ) ) : ?>
                     <?php while ( have_rows( 'informatie_vlak-2-home' ) ) : the_row(); ?>
-                        <div class="informatieVlak-onder">
-                            <?php if ( have_rows( 'titels-info2-home' ) ) : ?>
-                                <?php while ( have_rows( 'titels-info2-home' ) ) : the_row(); ?>
-                                    <h2 class="titel-infoOnder"><?php the_sub_field( 'titel-info2-home' ); ?><span class="oranje_punt"><?php the_sub_field( 'titel_info2-home-oranjepunt' ); ?></span></h2>
-                                <?php endwhile; ?>
-                            <?php endif; ?>
-                            <?php the_sub_field( 'informatie-info2-home' ); ?>
+                        <div class="onlyBorder">
+                            <div class="informatieVlak-onder">
+                                <?php if ( have_rows( 'titels-info2-home' ) ) : ?>
+                                    <?php while ( have_rows( 'titels-info2-home' ) ) : the_row(); ?>
+                                        <h2 class="titel-infoOnder"><?php the_sub_field( 'titel-info2-home' ); ?><span class="oranje_punt"><?php the_sub_field( 'titel_info2-home-oranjepunt' ); ?></span></h2>
+                                    <?php endwhile; ?>
+                                <?php endif; ?>
+                                <?php the_sub_field( 'informatie-info2-home' ); ?>
+                            </div>
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
@@ -166,6 +168,37 @@ get_header(); ?>
         <?php else : ?>
             <?php // No rows found ?>
         <?php endif; ?>
+    </div>
+</div>
+<div class="verbeterd-slider" style="background-image: linear-gradient( to right, #000000f7, #0f4a5800 ), url(<?php the_field('achtergrond_afbeelding-verbeterd'); ?>)">
+    <?php if ( get_field( 'titel-verbeterd' ) ) : ?>
+        <h2 class="titel-verbeterd">
+        <?php the_field( 'titel-verbeterd' ); ?>
+        </h2>
+    <?php endif ?>
+    <div class="verbeterd-slider-inhoud">
+        <div class="verbeterd-slider-c1">
+            <div class="afbeeldingen-hoofd-1">
+                <h5 class="hoofd-verbeterd_1"><?php the_field( 'tekst_bij_hoofd_1-verbeterd' ); ?></h5>
+                <?php $hoofd_verbeterd_1 = get_field( 'hoofd-verbeterd_1' ); ?>
+                <?php if ( $hoofd_verbeterd_1 ) : ?>
+                    <img src="<?php echo esc_url( $hoofd_verbeterd_1['url'] ); ?>" alt="<?php echo esc_attr( $hoofd_verbeterd_1['alt'] ); ?>" />
+                <?php endif; ?>
+            </div>
+            <div class="afbeeldingen-hoofd-2">
+            <h5 class="hoofd-verbeterd_2"><?php the_field( 'tekst_bij_hoofd_2-verbeterd' ); ?></h5>
+                <?php $hoofd_verbeterd_2 = get_field( 'hoofd-verbeterd_2' ); ?>
+                <?php if ( $hoofd_verbeterd_2 ) : ?>
+                    <img src="<?php echo esc_url( $hoofd_verbeterd_2['url'] ); ?>" alt="<?php echo esc_attr( $hoofd_verbeterd_2['alt'] ); ?>" />
+                <?php endif; ?>
+            </div>
+        </div>
+        <div class="verbeterd-slider-c2">
+            <?php $knop_rechts_verbeterd = get_field( 'knop_rechts-verbeterd' ); ?>
+            <?php if ( $knop_rechts_verbeterd ) : ?>
+                <a class="button-slider-verbeterd" href="<?php echo esc_url( $knop_rechts_verbeterd['url'] ); ?>" target="<?php echo esc_attr( $knop_rechts_verbeterd['target'] ); ?>"><?php echo esc_html( $knop_rechts_verbeterd['title'] ); ?><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <?php endif; ?>
+        </div>
     </div>
 </div>
 
