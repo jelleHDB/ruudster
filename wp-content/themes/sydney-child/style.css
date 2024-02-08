@@ -129,7 +129,7 @@ h2, h1 {
     font-size: 25px;
   }
   .extra-border {
-    padding: 20px 10px;
+    padding: 20px 30px;
   }
 }
 .topnav {
@@ -921,4 +921,297 @@ i.fa.fa-angle-right {
 
 .menu-item-footer-c1:hover, .menu-items-c2:hover, .linkTelefoonnummer-footer-c3:hover, .linkMail-footer-c3:hover {
   color: #F76A02;
+}
+
+.slider-overOns-inner {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 30px 150px;
+  display: flex;
+  gap: 20%;
+}
+
+.slider-overOns-c1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-overOns-c1, .slider-overOns-c2 {
+  flex: 50%;
+}
+
+.slider-overOns-c2 {
+  flex: 40%;
+  background-color: #0F4A58;
+  border-radius: 40px 0px;
+  box-shadow: 16px 16px #3B6D78;
+  margin: 40px 0px;
+}
+
+.tekst_in_slider-overOns {
+  display: inline-block;
+  text-transform: uppercase;
+  mix-blend-mode: screen;
+  background: white;
+  padding: 5px 20px;
+  margin-left: 10px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 62px !important;
+}
+
+.informatieSlider-overOns {
+  font-weight: 200;
+  font-size: 27px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.informatieSlider-dikGedrukt-overOns {
+  margin: 0px 10px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .slider-overOns-c2 {
+    margin: 0px;
+  }
+  .tekst_in_slider-overOns {
+    font-size: 44px !important;
+  }
+  .informatieSlider-overOns {
+    font-size: 22px;
+  }
+  .slider-overOns-inner {
+    gap: 8%;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .slider-overOns-c2 {
+    margin: 60px 0 0 0;
+  }
+  .tekst_in_slider-overOns {
+    font-size: 32px !important;
+  }
+  .informatieSlider-overOns {
+    font-size: 22px;
+  }
+  .slider-overOns-inner {
+    gap: 8%;
+    flex-direction: column;
+  }
+  .slider-overOns-c1 {
+    padding-bottom: 200px;
+  }
+}
+.linkRepeater-overOns {
+  font-size: 70px;
+  padding: 100px 20px;
+  font-weight: 600;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 4px solid #F76A02;
+}
+
+.repeater-overOns-inner {
+  border-top: 4px solid #F76A02;
+}
+
+.linkRepeater-overOns:hover {
+  color: #F76A02;
+}
+
+.divRepeater-overOns {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.repeater-overOns {
+  transform: rotate(-2.5deg);
+  width: 107%;
+  position: relative;
+  margin: 0px 0px 150px -40px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .repeater-overOns {
+    transform: rotate(-2.5deg);
+    width: 109%;
+    position: relative;
+    margin: 0px 0px 150px -40px;
+  }
+  .linkRepeater-overOns {
+    font-size: 58px;
+    padding: 70px 30px;
+  }
+}
+@media only screen and (max-width: 799px) {
+  .repeater-overOns {
+    transform: rotate(0deg);
+    width: 100%;
+    position: relative;
+    margin: 0px 0px 100px 0px;
+  }
+  .linkRepeater-overOns {
+    font-size: 36px;
+    padding: 70px 30px;
+  }
+}
+.informatie-overOns-inner {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 30px;
+}
+
+.titelInfoOranje-overOns {
+  color: #F76A02;
+  border-right: 5px solid black;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+
+.informatieInfo-overOns p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: black;
+}
+
+.informatieInfo-overOns {
+  margin-left: 90px;
+}
+
+.orangeLineOverOns {
+  height: 2px;
+  background-color: #F76A02;
+  border: 0px;
+  margin-bottom: 40px;
+  margin-left: 2px;
+  width: 100%;
+  max-width: 175px;
+}
+
+@media only screen and (max-width: 1475px) {
+  .titelInfoZwart-overOns {
+    position: absolute;
+  }
+}
+@media only screen and (max-width: 1445px) {
+  .informatieInfo-overOns {
+    margin-top: 60px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  .informatieInfo-overOns {
+    margin-top: 100px;
+  }
+  .informatie-overOns-inner {
+    padding: 30px 30px 80px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .informatieInfo-overOns {
+    margin-left: 0px;
+  }
+  .orangeLineOverOns {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 356px) {
+  .informatieInfo-overOns {
+    margin-top: 130px;
+  }
+}
+.titelInformatieSlider-contact {
+  color: white;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.titelAdresSlider-contact {
+  margin: 0px;
+  font-size: 26px;
+  font-weight: 300;
+  color: white;
+}
+
+.adresTitelsSlider-contact {
+  margin: 30px 0px;
+}
+
+.telefoonnummerContactSlider, .mailContactSlider {
+  color: white;
+  font-size: 26px;
+  font-weight: 300;
+  display: block;
+}
+
+.mailTelSliderDiv-contact i {
+  margin-right: 20px;
+}
+
+.mailTelSliderDiv-contact .fa-phone {
+  font-size: 28px;
+}
+
+.mailTelSliderDiv-contact .fa-envelope {
+  font-size: 24px;
+}
+
+.mailTelSliderDiv-contact {
+  margin-bottom: 25px;
+}
+
+.telefoonnummerContactSlider:hover, .mailContactSlider:hover {
+  color: #F76A02;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px) {
+  .titelInformatieSlider-contact {
+    font-size: 24px;
+  }
+  .titelAdresSlider-contact {
+    font-size: 24px;
+  }
+  .telefoonnummerContactSlider, .mailContactSlider {
+    font-size: 22px;
+  }
+  .mailTelSliderDiv-contact .fa-phone {
+    font-size: 24px;
+  }
+  .mailTelSliderDiv-contact .fa-envelope {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .titelInformatieSlider-contact {
+    font-size: 20px;
+  }
+  .titelAdresSlider-contact {
+    font-size: 20px;
+  }
+  .telefoonnummerContactSlider, .mailContactSlider {
+    font-size: 18px;
+  }
+  .mailTelSliderDiv-contact .fa-phone {
+    font-size: 20px;
+  }
+  .mailTelSliderDiv-contact .fa-envelope {
+    font-size: 16px;
+  }
+}
+.googleMapsSpan iframe {
+  width: 108%;
+  max-width: 108% !important;
+  border-top: 4px solid #F76A02 !important;
+  border-bottom: 4px solid #F76A02 !important;
+  margin: 0px 0px 150px -25px;
+  transform: rotate(-2.5deg);
 }/*# sourceMappingURL=style.css.map */
