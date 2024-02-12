@@ -13,6 +13,7 @@ if( function_exists('acf_add_options_page') ) {
        'menu_title'    => 'Header Settings',
        'menu_slug'     => 'header-settings',
        'capability'    => 'edit_posts',
+       'icon_url' => 'dashicons-align-full-width',
        'redirect'      => false
    ));
 }
@@ -24,6 +25,7 @@ if( function_exists('acf_add_options_page') ) {
        'menu_title'    => 'Footer Settings',
        'menu_slug'     => 'footer-settings',
        'capability'    => 'edit_posts',
+       'icon_url' => 'dashicons-button',
        'redirect'      => false
    ));
 }

@@ -46,7 +46,48 @@ get_header(); ?>
         <span class="googleMapsSpan"><?php the_field( 'googlemaps-contact' ); ?></span>
     </div>
 </div>
-
+<div class="titelOverOns-overRuudster">
+    <div class="titelOverOns-overRuudster-inner">
+        <?php if ( have_rows( 'titelsRuudsterOverRuudster-overOns' ) ) : ?>
+            <?php while ( have_rows( 'titelsRuudsterOverRuudster-overOns' ) ) : the_row(); ?>
+                <h2 class="titelOverRuudster-overOns"><span class="oranjeTitelOverRuudster"><?php the_sub_field( 'titel_oranjeOverRuudster-overRuudster' ); ?></span><span class="titel_zwart1OverRuudster"><?php the_sub_field( 'titelZwartOverOns-overOns_1' ); ?></span><span class="titel_zwart2OverRuudster"><?php the_sub_field( 'titelZwartOverOns-overOns_2' ); ?></span></h2>
+            <?php endwhile; ?>
+        <?php endif; ?>
+        <span class="informatieOverOns-overRuudster"><?php the_field( 'informatieOverOns-overOns' ); ?></span>
+    </div>
+</div>
+<div class="mensenRepeater-overOns">
+    <div class="mensenRepeater-overOns-inner">
+        <?php if ( have_rows( 'persoonRuudster-overOns' ) ) : ?>
+            <?php while ( have_rows( 'persoonRuudster-overOns' ) ) : the_row(); ?>
+                <div class="persoonRepeater-overOns">
+                    <?php if ( get_sub_field( 'afbeeldingHoofd-overOnsRepeater' ) ) : ?>
+                        <div class="hoofdDivContactRepeater">
+                            <img class="afbeeldingPersoonOverOnsRepeater" src="<?php the_sub_field( 'afbeeldingHoofd-overOnsRepeater' ); ?>" />
+                        </div>
+                    <?php endif ?>
+                    <div class="borderPersoonDivRepeater">
+                        <div class="extra-border">
+                            <?php if ( have_rows( 'naamGroep-overOnsRepeater' ) ) : ?>
+                                <?php while ( have_rows( 'naamGroep-overOnsRepeater' ) ) : the_row(); ?>
+                                    <h3 class="titelPersoonRepeater-overOns"><span class="oranjeTitelPersoonRepeater-overOns"><?php the_sub_field( 'naamoranjeGroep-overOnsRepeater' ); ?></span><?php the_sub_field( 'naamzwartGroep-overOnsRepeater' ); ?></h3>
+                                <?php endwhile; ?>
+                            <?php endif; ?>
+                            <h6 class="functiePersoonRepeater"><?php the_sub_field( 'functiePersoon-overOnsRepeater' ); ?></h6>
+                            <span class="beschrijvingPersoonRepeater"><?php the_sub_field( 'beschrijvingPersoon-overOnsRepeater' ); ?></span>
+                            <?php $leesMeerLink_overOnsRepeater = get_sub_field( 'leesMeerLink-overOnsRepeater' ); ?>
+                            <?php if ( $leesMeerLink_overOnsRepeater ) : ?>
+                                <a class="leesMeerKnopRepeater" href="<?php echo esc_url( $leesMeerLink_overOnsRepeater['url'] ); ?>" target="<?php echo esc_attr( $leesMeerLink_overOnsRepeater['target'] ); ?>"><?php echo esc_html( $leesMeerLink_overOnsRepeater['title'] ); ?></a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
+                </div>
+                <?php endwhile; ?>
+            <?php else : ?>        
+            <?php // No rows found ?>
+        <?php endif; ?>
+    </div>
+</div>
 
 <?php get_footer(); ?>
 

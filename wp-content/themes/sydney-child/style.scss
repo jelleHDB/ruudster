@@ -1328,6 +1328,416 @@ i.fa.fa-angle-right {
     max-width: 108% !important;
     border-top: 4px solid $secondColor !important;
     border-bottom: 4px solid $secondColor !important;
-    margin: 0px 0px 150px -25px;
+    margin: 0px 0px 100px -25px;
     transform: rotate(-2.5deg);
 }
+
+.titelOverOns-overRuudster-inner {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 30px 80px;
+}
+
+.oranjeTitelOverRuudster {
+    color: $secondColor;
+    text-transform: uppercase;
+    border-right: 5px solid black;
+    padding-right: 20px;
+}
+
+.titel_zwart1OverRuudster {
+    margin: 0px 10px;
+    padding-left: 10px;
+}
+
+.titel_zwart2OverRuudster {
+    border-bottom: 1px solid $secondColor;
+}
+
+.informatieOverOns-overRuudster p {
+    font-family: $mainFont;
+    margin-top: 50px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .titelOverOns-overRuudster-inner { 
+        padding: 0px 30px 70px;
+    }
+}
+
+.mensenRepeater-overOns-inner {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 30px 120px;
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.persoonRepeater-overOns {
+    flex: 25%;
+}
+
+.persoonRepeater-overOns .extra-border-2 {
+    height: unset !important;
+}
+
+.hoofdDivContactRepeater {
+    text-align: center;
+    max-height: 260px;
+    height: 260px;
+}
+
+.oranjeTitelPersoonRepeater-overOns {
+    color: $secondColor;
+    margin-right: 5px;
+}
+
+.titelPersoonRepeater-overOns {
+    font-family: $mainFont;
+    font-size: 26px;
+    color: white;
+}
+
+.borderPersoonDivRepeater {
+    background-color: $mainColor;
+    border-radius: 40px 0px;
+    box-shadow: 16px 16px #3B6D78;
+}
+
+.functiePersoonRepeater {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+}
+
+.beschrijvingPersoonRepeater p {
+    color: white;
+    font-family: $mainFont;
+    font-size: 14px;
+}
+
+.leesMeerKnopRepeater {
+    color: white;
+    font-family: $mainFont;
+    text-decoration: underline;
+}
+
+.leesMeerKnopRepeater:hover {
+    color: $secondColor;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px)  {
+    .persoonRepeater-overOns {
+        flex: 40%;
+        margin-top: 80px;
+    }
+
+    .mensenRepeater-overOns-inner {
+        padding: 0px 30px;
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    .persoonRepeater-overOns {
+        flex: 100%;
+        margin-top: 80px;
+    }
+
+    .mensenRepeater-overOns-inner {
+        padding: 0px 30px;
+        margin-bottom: 100px;
+    }
+
+    .titelOverOns-overRuudster-inner {
+        padding: 0px 30px 10px;
+    }
+}
+
+.sliderTemplate-inner {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.titelSliderTemplate {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0px;
+    text-transform: uppercase;
+    mix-blend-mode: screen;
+    background: white;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 62px;
+}
+
+.infoOnderTitel-inner {
+    margin: 0px auto;
+    padding: 100px 30px 10px;
+    max-width: 1600px;
+    width: 100%;
+}
+
+.oranjeTitelOnderSliderTemplate {
+    color: $secondColor;
+    text-transform: uppercase;
+    border-right: 3px solid black;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.titelsOnderSliderTemplate {
+    font-family: $mainFont;
+}
+
+.informatieOnderSliderTemplateDiv {
+    margin-left: 80px;
+}
+
+.oranjeLijnBovenInformatieTemplate {
+    max-width: 30px;
+    width: 100%;
+    height: 0px;
+    border: 1px solid $secondColor;
+    margin-left: 0px;
+    margin-bottom: 30px;
+}
+
+.informatieOnderSliderTemplate {
+    font-family: $mainFont;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 799px) {
+    .titelZwartOnderSliderTemplate {
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 679px) {
+    .informatieOnderSliderTemplateDiv {
+        margin-left: 65px;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .informatieOnderSliderTemplate {
+        font-size: 16px;
+    }
+}
+
+.herhalerGrijsVlak-inner {
+    max-width: 1430px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 70px 30px;
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+}
+
+.grijsVlakRepeater {
+    flex: 30%;
+    padding: 20px 40px;
+    background-color: #eaeaea;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px 3px #d2d2d2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titelGrijsVlakRepeater {
+    font-size: 28px;
+    font-family: $mainFont;
+}
+
+.oranjeTitelRepeaterGrijsVlak {
+    color: $secondColor;
+    margin-right: 7px;
+}
+
+.infoGrijsVlakRepeater {
+    font-family: $mainFont;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 800px)  {
+    .grijsVlakRepeater {
+        flex: 45%;
+    }
+}
+
+@media only screen and (max-width: 799px) {
+    .grijsVlakRepeater {
+        flex: 80%;
+    }
+}
+
+.extraInformatie-inner {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 30px 70px;
+}
+
+.titelOranjeBenedenInfoTemplate {
+    font-family: $mainFont;
+    color: $secondColor;
+    text-transform: uppercase;
+    border-right: 3px solid black;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.divTitelsExtraInformatie2 {
+    font-family: $mainFont;
+    font-size: 18px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+.oranjeStreepBenedenInfoTemplate {
+    max-width: 30px;
+    width: 100%;
+    height: 0px;
+    border: 1px solid $secondColor;
+    margin-left: 90px;
+    margin-bottom: 30px;
+}
+
+.titelBenedenInfoTemplate {
+    margin-top: 100px;
+    font-family: $mainFont;
+}
+
+.titel_zwart-benedenTemplate {
+    position: absolute;
+}
+
+.titelOranjeBenedenInfo2 {
+    font-family: $mainFont;
+    font-weight: 500;
+}
+
+.titelOranjeBenedenInfo2::first-letter {
+    color: $secondColor;
+}
+
+.oranjePuntInformatieTemplate {
+    color: $secondColor;
+}
+
+@media only screen and (max-width: 799px) {
+    .titelBenedenInfoTemplate {
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .divTitelsExtraInformatie2, .oranjeStreepBenedenInfoTemplate {
+        margin-left: 75px;
+    }
+
+    .divTitelsExtraInformatie2 {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .divTitelsExtraInformatie2, .oranjeStreepBenedenInfoTemplate {
+        margin-left: 70px;
+    }
+
+    .divTitelsExtraInformatie2 {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    .divTitelsExtraInformatie2, .oranjeStreepBenedenInfoTemplate {
+        margin-left: 64px;
+    }
+
+    .divTitelsExtraInformatie2 {
+        margin-top: 40px;
+    }
+
+    .oranjeStreepBenedenInfoTemplate {
+        display: none;
+    }
+}
+
+.vraagExtraInformatieAan-template-inner {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 30px 110px;
+}
+
+.titelVraagMeerInfoAan-template::first-letter , .oranjePunt {
+    color: $secondColor;
+}
+
+.informatieVraagMeerInfoAan-template {
+    font-family: $mainFont;
+    font-size: 18px;
+}
+
+.informatieVraagMeerInfoAan-template a {
+    color: $secondColor;
+}
+
+.informatieVraagMeerInfoAan-template a:hover {
+    color: $secondColor;
+    text-decoration: underline;
+}
+
+.buttonVraagMeerInfoAan-template {
+    color: white;
+    background-color: $secondColor;
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: 1px solid $secondColor;
+    font-family: $mainFont;
+    text-transform: uppercase;
+    position: relative;
+    top: 30px;
+}
+
+.buttonVraagMeerInfoAan-template:hover {
+    background: transparent;
+    color: $secondColor;
+}
+
+.grijzeStreep {
+    margin-bottom: 80px;
+    width: 100%;
+    height: 0px;
+    border: 1px solid #ececec;
+}
+
+@media only screen and (max-width: 600px) {
+    .vraagExtraInformatieAan-template-inner {
+        padding: 10px 30px 140px !important;
+    }
+
+    .informatieVraagMeerInfoAan-template {
+        font-size: 16px;
+    }
+
+    .buttonVraagMeerInfoAan-template {
+        padding: 10px 20px;
+    }
+}   
