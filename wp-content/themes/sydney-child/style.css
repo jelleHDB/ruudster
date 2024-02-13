@@ -1603,4 +1603,161 @@ i.fa.fa-angle-right {
   .buttonVraagMeerInfoAan-template {
     padding: 10px 20px;
   }
+}
+.informatie-referentie-inner {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 30px;
+}
+
+.titelInformatieReferentie::first-letter, .oranjePuntReferentie {
+  color: #F76A02;
+}
+
+.informatieReferentie {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.linkNaarBedrijf {
+  flex: 22.5%;
+  box-shadow: 0 0 15px #b1a5a5;
+  padding: 25px;
+  margin-bottom: 40px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.linkNaarBedrijf:hover {
+  box-shadow: 0 0 15px #4f4747;
+}
+
+.logoBedrijvenDiv {
+  gap: 2.5%;
+  display: flex;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.logo-bedrijf {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
+  .linkNaarBedrijf {
+    flex: 45%;
+    max-width: 455px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 599px) {
+  .linkNaarBedrijf {
+    flex: 95%;
+    max-width: 595px;
+    text-align: center;
+  }
+}
+.bedrijfDivInner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 30px 150px;
+}
+
+.sliderBedrijf {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  text-align: center;
+  padding: 130px 30px;
+  margin-bottom: 50px;
+}
+
+.infoOnderSliderBedrijf {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.meerInformatieBedrijf {
+  margin-top: 50px;
+}
+
+.titelMeerInfoBedrijf {
+  font-family: "Poppins", sans-serif;
+}
+
+.titelMeerInfoBedrijf::first-letter, .titelMeerInfoOfContact::first-letter, .oranjePuntContactBedrijf {
+  color: #F76A02;
+}
+
+.infoMeerInfoBedrijf {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.titelMeerInfoOfContact {
+  margin-top: 40px;
+}
+
+.grijzeStreepMeerInfoBedrijf {
+  margin: 50px 0px;
+  background-color: #efefef;
+  height: 3px;
+  border: 0px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 699px) {
+  .sliderBedrijf {
+    padding: 100px 30px;
+  }
+  .sliderBedrijf .titelSliderTemplate {
+    font-size: 32px;
+  }
+  .infoOnderSliderBedrijf, .infoMeerInfoBedrijf {
+    font-size: 16px;
+  }
+}
+.costum404 {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+.info404 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.buttonCostum404 {
+  background-color: #0F4A58;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  border: 1px solid #0F4A58;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
+.buttonCostum404:hover {
+  background-color: transparent;
+  color: #0F4A58;
+}
+
+.link404 {
+  color: #F76A02;
+}
+
+.link404:hover {
+  color: #F76A02;
+  text-decoration: underline;
+}
+
+.dikGedrukt404 {
+  color: #F76A02;
 }/*# sourceMappingURL=style.css.map */

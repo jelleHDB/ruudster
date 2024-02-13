@@ -57,7 +57,7 @@
 
 	<?php do_action('sydney_after_hero'); ?>
 
-<div class="header-costum">
+<div class="header-costum" id="headerCostum">
 	<div class="header-costum-inner">
 		<div class="header-costum-c1">
 			<?php $telefoonnummer_header = get_field( 'telefoonnummer-header', 'option' ); ?>
